@@ -1,7 +1,7 @@
 import  styled from "styled-components";
 
 export const Container = styled.div`
-  background-color: #f3e8ff;
+  background-color: ${({ theme }) => theme.colors.Violet};
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -17,7 +17,6 @@ export const Form = styled.form`
   border-radius: 10px;
   width: 100%;
   gap: 10px;
-  opacity: calc(0.5);
 `;
 
 export const Input = styled.input`
@@ -26,7 +25,6 @@ export const Input = styled.input`
   border-radius: 8px;
   background-color: #d6d3d1;
   font-size: 16px;
-  opacity: calc(0.5);
   border: none;
   color: #27272a;
   font-weight: bold;
@@ -41,7 +39,7 @@ export const Button = styled.button`
   justify-content: center;
   align-items: center;
   border: none;
-  color: #27272a;
+  color: #71717a;
   font-size: 18px;
   font-weight: bold;
   cursor: pointer;
